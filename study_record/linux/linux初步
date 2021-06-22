@@ -25,3 +25,11 @@
     1、操作系统（operation system，简称OS）是管理计算机硬件与软件资源的计算机程序。
        操作系统需要处理如管理与配置内存、决定系统资源供需的优先次序、控制输入设备与输出设备、操作网络与管理文件系统等基本事务。
        操作系统也提供一个让用户与系统交互的操作界面。
+三、linux
+    1、一切皆文件
+    2、linux命令：
+        command [-options] parameter11 parameter12 ...
+        说明：
+        command:一行命令中第一个输入的部分绝对是命令或可执行文件
+        -options:命令的参数选项
+        parameter11 parameter12 ...:依附在options之后的参数
