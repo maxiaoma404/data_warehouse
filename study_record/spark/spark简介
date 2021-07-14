@@ -1,2 +1,29 @@
-Spark最初由美国加州伯克利的AMP实验室于2009年开发，是基于内存的大数据并行计算框架，可用于构建大型的、低延迟的数据分析应用程序。
-2013年加入Apache孵化器项目。
+1、简介
+    Spark最初由美国加州伯克利的AMP实验室于2009年开发，是基于内存的大数据并行计算框架，可用于构建大型的、低延迟的数据分析应用程序。
+    2013年加入Apache孵化器项目。
+2、特点
+    Spark使用DAG有向无环图执行引擎以支持循环数据流与内存计算。
+    容易使用，支持java、python、scala、R等的交互式编程
+    通用：提供了完整强大的技术栈。
+    运行模式多样：可以在hadoop之上，也可以在Amazon EC2等云环境中，并且可以访问DFS、Cassandra、Hbase、Hive等多种数据源。
+3、Spark和Hadoop对比
+    hadoop缺点：
+    表达能力有限：只抽象为map和reduce
+    延迟高
+    磁盘IO开销大
+    任务之间衔接涉及IO开销
+    在前一个任务完成之前，其他任务就无法开始，难以胜任复杂的计算任务。
+    spark相比于Hadoop MapReduce的优点：
+    Spark的计算模式也属于MapReduce，但不局限于Map和Reduce操作，还提供了多种数据集操作类型，编程模型比Hadoop更灵活
+    Spark提供了内存计算，可将中间结果放到内存中，对于迭代运算效率更高
+    Spark基于DAG的任务调度执行机制，要优于Hadoop MapReduce的迭代执行机制
+4、Spark生态系统
+    企业数据处理场景
+        复杂的批量数据处理
+        基于历史数据的交互式查询
+        基于实时数据流的数据处理
+    Spark Core：提供内存计算
+    Spark SQL：提供交互式查询分析
+    Spark Streaming：提供流计算功能
+    Mllib：提供机器学习算法库的组件
+    GraphX：提供图计算
