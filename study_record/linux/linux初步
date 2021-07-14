@@ -28,8 +28,8 @@
 三、linux
     1、一切皆文件
     2、linux命令：
-        command [-options] parameter11 parameter12 ...
+        command [-options] parameter1 parameter2 ...
         说明：
         command:一行命令中第一个输入的部分绝对是命令或可执行文件
         -options:命令的参数选项
-        parameter11 parameter12 ...:依附在options之后的参数
+        parameter1 parameter2 ...:依附在options之后的参数
